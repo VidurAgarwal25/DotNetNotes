@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Go To About Page of Home Controller", "About", new { name = "Vidur Agarwal"})
+        <br />
+        @Html.ActionLink("Go To Index Page of Student Controller", "Index", "Student")
+    </div>
+    <br />
+    <div>
+       @Html.TextBox("textbox1","Vidur Agarwal")
+    </div>
+    <div>
+        @using (Html.BeginForm())
+            {
+
+            }
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿@using RazorSyntax.Models
+@model RazorSyntax.Models.Employee
+<html>
+<head>
+
+</head>
+<body>
+    <div>
+        Hello from IndexView
+    </div>
+    <div>
+        @DateTime.Now
+        
+    </div>
+    <div>
+        @(5-3)
+    </div>
+    @{ 
+        var a = 1;
+        var b = 2;
+        var c = a + b;
+        <text>int d = 5;</text>
+    }
+    <div>
+        <label>@c</label>
+    </div>
+    <div>
+        <label>
+            My twitter name is :- @@viduragarwal25
+        </label>
+    </div>
+    @{ 
+        bool isTrue = false;
+    }
+    @if (isTrue)
+    {
+        <h1>Hello I am learning if condition in dotnet.</h1>
+    }
+    else
+            {
+                <h1>I am in else condition</h1>
+            }
+    @(isTrue == false ? "first condition in ternary":"second condition in ternary")
+    @for(int i = 1; i <= 5; i++)
+            {
+                <div><h1>Hello i am learning for loop for @(i-1)</h1></div>
+            }
+        @{ 
+            Employee emp = new Employee() { Id = 1, Name = "Vidur" };
+            <div>
+                <h1>Id = @emp.Id and Name = @emp.Name</h1>
+            </div>
+        }
+
+</body>
+</html>
+

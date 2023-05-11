@@ -13,7 +13,7 @@ namespace StandardHtmlHelpers.Controllers
         {
             return View();
         }
-        public ActionResult About()
+        public ActionResult About(string name = null)
         {
             return View();
         }
